@@ -4,5 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="internal_logs\" />
+    <Folder Include="logs\" />
+  </ItemGroup>
+
 
 </Project>
