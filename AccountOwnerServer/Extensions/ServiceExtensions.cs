@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 using Microsoft.Extensions.Configuration;
+using Repository;
 
 namespace AccountOwnerServer.Extensions
 {
@@ -38,6 +39,11 @@ namespace AccountOwnerServer.Extensions
             //var connectionString = config["ConnectionStrings:sqlConnection"];
             
             services.AddDbContext<RepositoryContext>(opts => opts.UseSqlServer(config.GetConnectionString("sqlConnection")));
+        }
+
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }
