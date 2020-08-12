@@ -1,2 +1,3 @@
 2020-08-17 15:27:57.4601 INFO Returned all owners from database.
 2020-08-17 15:27:57.4601 INFO Returned all owners from database.
+2020-08-17 16:02:42.6968 INFO Returned owner with id: 7a70cbfa-82e8-1f68-c3a6-0d22c129a142
