@@ -34,5 +34,10 @@ namespace Repository
         {
             return FindByCondition(owner => owner.Id.Equals(ownerId)).Include(ac => ac.Accounts).FirstOrDefault();
         }
+
+        public void UpdateOwner(Owner owner)
+        {
+            Update(owner);
+        }
     }
 }
